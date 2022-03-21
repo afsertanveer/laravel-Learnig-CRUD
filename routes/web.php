@@ -7,6 +7,7 @@ use App\Http\Controllers\SingleActionController;
 use App\Http\Controllers\RegistrationController;
 use App\Models\Customers;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\RelationController;
 use Illuminate\Http\Request;
 
 Route::get('/',function(){
@@ -36,6 +37,7 @@ Route::group(['prefix'=>'/customer'],function(){
 
 });
 
+Route::get('/data',[RelationController::class,'index']);
 
 Route::get('/get-all-session',function(){
     $session = session()->all();
