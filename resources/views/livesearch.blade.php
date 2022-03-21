@@ -37,6 +37,7 @@
                 <input type="text" name="search" autocomplete="off" id="search" class="form-control"
               placeholder="search by name or email"  onfocus="this.value">
             </div>
+            <button class="btn btn-primary">Useless</button>
 
         <div id='search_list'>
 
