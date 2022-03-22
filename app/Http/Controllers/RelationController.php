@@ -9,6 +9,6 @@ class RelationController extends Controller
 {
     //
     public function index(){
-        return Member::all();
+        return Member::with('getGroup')->get();
     }
 }
